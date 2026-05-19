@@ -7,13 +7,13 @@
 document_lines(document)
 }
 \arguments{
-\item{document}{A report object with class \code{rapsimng_decide_report}.}
+\item{document}{A report object with class \code{rapsimng_decide_document}.}
 }
 \value{
 A character vector containing the ordered document lines.
 }
 \description{
-Converts a \code{rapsimng_decide_report} object into a character vector that can
+Converts a \code{rapsimng_decide_document} object into a character vector that can
 be written to disk. A document prefix is written first when present, then
 each non-\code{NULL} section body separated by blank lines.
 }

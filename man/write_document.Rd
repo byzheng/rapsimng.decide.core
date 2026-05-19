@@ -7,7 +7,7 @@
 write_document(document, path, overwrite = FALSE)
 }
 \arguments{
-\item{document}{A report object with class \code{rapsimng_decide_report}.}
+\item{document}{A report object with class \code{rapsimng_decide_document}.}
 
 \item{path}{A single output file path.}
 
@@ -18,6 +18,6 @@ replaced.}
 Invisibly returns \code{path}.
 }
 \description{
-Serialises a \code{rapsimng_decide_report} with \code{document_lines()} and writes the
+Serialises a \code{rapsimng_decide_document} with \code{document_lines()} and writes the
 resulting text file to \code{path}.
 }

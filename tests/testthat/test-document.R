@@ -12,7 +12,7 @@ test_that("document_lines includes prefix and non-null sections", {
 				list(body = "Section 2")
 			)
 		),
-		class = "rapsimng_decide_report"
+		class = "rapsimng_decide_document"
 	)
 
 	expect_equal(
@@ -35,7 +35,7 @@ test_that("write_document refuses to overwrite unless requested", {
             prefix = NULL,
             sections = list(list(body = "Only section"))
         ),
-        class = "rapsimng_decide_report"
+        class = "rapsimng_decide_document"
     )
     path <- file.path(tmp_dir, "document.txt")
     writeLines("existing", path)
@@ -56,7 +56,7 @@ test_that("write_document writes lines and returns the output path invisibly", {
             prefix = list(body = "Intro"),
             sections = list(list(body = c("Body", "Tail")))
         ),
-        class = "rapsimng_decide_report"
+        class = "rapsimng_decide_document"
     )
     path <- file.path(tmp_dir, "document.txt")
 
