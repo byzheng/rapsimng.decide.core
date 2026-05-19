@@ -1,4 +1,4 @@
 library(testthat)
-library(rapsimng.decide)
+library(rapsimng.decide.core)
 
-test_check("rapsimng.decide")
+test_check("rapsimng.decide.core")
