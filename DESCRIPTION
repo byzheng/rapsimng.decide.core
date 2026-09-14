@@ -2,8 +2,8 @@ Package: rapsimng.decide.core
 Title: Decision-Oriented Analysis Core for APSIM Next Generation Outputs
 Version: 0.1.0
 Authors@R: 
-    person("Bangou", "Zheng", , "zheng.bangyou@gmail.com", role = c("aut", "cre"))
-Description: Provides a low-level interface for analysing APSIM Next Generation simulation outputs to support structured decision-making workflows.
+    person("Bangyou", "Zheng", email = "zheng.bangyou@gmail.com", role = c("aut", "cre"))
+Description: Provides a low-level interface for analysing Agricultural Production Systems sIMulator ('APSIM') Next Generation simulation outputs to support structured decision-making workflows.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
