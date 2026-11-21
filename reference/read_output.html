@@ -82,12 +82,26 @@ default: "HarvestReport")</p></dd>
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">apsimx_file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="st">"example"</span>, <span class="st">"cultivar.apsimx"</span>,</span></span>
-<span class="r-in"><span>  package <span class="op">=</span> <span class="st">"rapsimng.decide"</span></span></span>
+<span class="r-in"><span>  package <span class="op">=</span> <span class="st">"rapsimng.decide.core"</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">output</span> <span class="op">&lt;-</span> <span class="fu">read_output</span><span class="op">(</span><span class="va">apsimx_file</span>, years <span class="op">=</span> <span class="fl">2010</span><span class="op">:</span><span class="fl">2011</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in read_output(apsimx_file, years = 2010:2011):</span> file.exists(apsimx_file) is not TRUE</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">output</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'output' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 24</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   CheckpointID SimulationID Experiment Cultivar   SowingDate Fertilisation Zone </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span>            1           10 Field      spring ve… 21-apr     200           Field</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span>            1           10 Field      spring ve… 21-apr     200           Field</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span>            1           21 Field      spring qu… 21-apr     200           Field</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span>            1           21 Field      spring qu… 21-apr     200           Field</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span>            1           15 Field      spring ve… 24-apr     200           Field</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span>            1           15 Field      spring ve… 24-apr     200           Field</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 17 more variables: Clock.Today &lt;date&gt;, Wheat.SowingDate &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   Wheat.SowingData.Cultivar &lt;chr&gt;, Wheat.Phenology.EmergenceDAS &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   Wheat.Phenology.TerminalSpikeletDAS &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   Wheat.Phenology.FlagLeafDAS &lt;dbl&gt;, Wheat.Phenology.HeadingDAS &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   Wheat.Phenology.FloweringDAS &lt;dbl&gt;, Wheat.Phenology.MaturityDAS &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   Yield &lt;dbl&gt;, Wheat.AboveGround.Wt &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   FrostHeatDamageFunctions.FrostHeatYield &lt;dbl&gt;, …</span></span>
 </code></pre></div>
     </div>
   </div>
