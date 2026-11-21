@@ -1,5 +1,5 @@
 test_that("read_output reads bundled APSIMX example", {
-    apsimx_file <- system.file("example", "cultivar.apsimx", package = "rapsimng.decide")
+    apsimx_file <- system.file("example", "cultivar.apsimx", package = "rapsimng.decide.core")
 
     expect_true(nzchar(apsimx_file))
     expect_true(file.exists(apsimx_file))
