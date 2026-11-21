@@ -6,7 +6,9 @@
 test.R
 Meta
 docs
-inst
+*.db-shm
+*.db-wal
+*.bak
 dev
 cran-comments.md
 CRAN-RELEASE

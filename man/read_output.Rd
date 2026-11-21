@@ -23,7 +23,7 @@ Read APSIMX output
 \examples{
 apsimx_file <- system.file(
   "example", "cultivar.apsimx",
-  package = "rapsimng.decide"
+  package = "rapsimng.decide.core"
 )
 output <- read_output(apsimx_file, years = 2010:2011)
 head(output)
